@@ -1,0 +1,21 @@
+{
+  "name": "shakuro-test",
+  "version": "1.0.0",
+  "description": "webpack shakuro test",
+  "main": "src/js/app.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Aleksey Strekalov",
+  "license": "MIT",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^v4.0.0-alpha.0",
+    "html-loader": "^0.5.5",
+    "slim-lang-loader": "0.0.7",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
