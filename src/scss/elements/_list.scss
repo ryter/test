@@ -1,0 +1,46 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+  }
+
+  &--telephone {
+    margin-bottom: 26px;
+    float: left;
+  }
+
+  &--share {
+    display: flex;
+    text-indent: -9999px;
+    clear: left;
+
+    a {
+      display: block;
+      width: 24px;
+      height: 20px;
+    }
+  }
+}
+
+.item-share {
+  &--facebook {
+    a {
+      @extend %icon-facebook;
+    }
+  }
+
+  &--twitter {
+    a {
+      @extend %icon-twitter;
+    }
+  }
+
+  &--linkedin {
+    a {
+      @extend %icon-linkedin;
+    }
+  }
+}

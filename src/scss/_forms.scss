@@ -1,0 +1,35 @@
+.form {
+  &--login {
+    background: $white;
+    border-radius: 6px;
+    padding: 30px 24px 26px;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 20px 90px -30px rgba($black, 0.25);
+
+    p {
+      margin: 0 0 16px;
+    }
+  }
+}
+
+.form-control {
+   font-family: inherit;
+   font-size: inherit;
+   line-height: lh(11.1, 18);
+   box-sizing: border-box;
+   display: block;
+   color: $gray;
+   border: none;
+   border-radius: 3px;
+   padding: 10px 9px;
+   margin: 0 0 12px;
+   background-color: rgba($gray-light-2, 0.25);
+   width: 100%;
+   min-height: 38px;
+   border-radius: 3px;
+
+   &::placeholder {
+     color: $gray-light-2;
+   }
+ }

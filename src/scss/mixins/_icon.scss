@@ -1,0 +1,4 @@
+@mixin icon($icon, $width, $height, $color: currentColor, $position: 50% 50%, $repeat: no-repeat) {
+	background: $color url($icon) $position $repeat;
+	background-size: $width $height;
+}

@@ -1,7 +1,52 @@
 doctype 5
 html
   head
-    title test project
-  body
-    h1 hdh
-    script src="./app.js"
+    title test page
+    meta name="format-detection" content="telephone=no"
+    meta http-equiv="x-rim-auto-match" content="none"
+    link rel="stylesheet" href="./css/style.css"
+  body.page.page--login
+    div.main
+        div.block--info
+          a.logo href="index.html"
+            img src="../images/logo.png"
+
+          h1  Welcome <br /> to The Nike Analytics
+
+          p To request an account, please contact <br /> the site administrators
+
+          ul.list.list--telephone
+            li
+              a.link--telephone href="tel:+245 04 166 0355" +245 04 166 0355
+
+            li
+              a.link--telephone href="tel:+347 42 390 2456" +347 42 390 2456
+
+          ul.list.list--share
+            li.item-share.item-share--facebook
+              a href="#" facebook
+
+            li.item-share.item-share--twitter
+              a href="#" twitter
+
+            li.item-share.item-share--linkedin
+              a href="#" linkedin
+
+        div.block--login
+          form.form.form--login
+            h2 Login
+
+            p This is a secure system and you will need to provide your login details to access the site
+
+            div.form-group
+              input.form-control type="text" placeholder="User name"
+
+            div.form-group
+              input.form-control type="text" placeholder="Password"
+
+            a.btn-link.btn-link--right.btn--block href="#" Forgot password?
+
+            button.btn.btn--block Log in
+
+
+    script src="./js/build.js"

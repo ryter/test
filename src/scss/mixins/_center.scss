@@ -1,0 +1,3 @@
+@mixin center($horizontal: -50%, $vertical: -50%) {
+	transform: translate($horizontal, $vertical);
+}

@@ -1,0 +1,15 @@
+%icon-facebook {
+	@include icon("../images/svg/social_facebook_icon.svg", 9px, 17px, transparent, 50% 50%);
+}
+
+%icon-twitter {
+	@include icon("../images/svg/social_twitter_icon.svg", 17px, 13px, transparent, 50% 50%);
+}
+
+%icon-linkedin {
+	@include icon("../images/svg/social_linkedIn_icon.svg", 14px, 14px, transparent, 50% 50%);
+}
+
+%bg-login {
+	@include icon("../images/svg/bg-login.svg", 100%, auto, transparent, 50% 50%);
+}

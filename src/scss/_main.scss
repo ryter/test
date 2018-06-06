@@ -1,0 +1,56 @@
+.page {
+  &--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main {
+      display: flex;
+      width: 100%;
+      max-width: 800px;
+      align-items: center;
+    }
+  }
+}
+
+.logo {
+  display: block;
+  max-width: 98px;
+  margin: 0 0 36px 0;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.block {
+  &--info,
+  &--login {
+    width: 50%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  &--info {
+    padding: 0 46px 0 82px;
+  }
+
+  &--login {
+    padding: 0 82px 0 46px;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 482px;
+      height: 566px;
+      z-index: -1;
+      top: 50%;
+      left: calc(50% - 18px);
+      @extend %bg-login;
+      @include center();
+    }
+  }
+}
